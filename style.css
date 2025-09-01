@@ -1,0 +1,178 @@
+/* Нулиране */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Видео фон */
+.video-background {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+.video-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: -99;
+}
+
+/* Хедър */
+header {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    
+}
+
+header .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #6a5acd;
+}
+
+header nav .discord-btn {
+    position: fixed;
+    top: 1; right: 0;
+    padding: 8px 20px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #6a5acd, #4169e1);
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    border: none; /* махаме сивото поле */
+}
+header nav .discord-btn:hover {
+    opacity: 0.8;
+}
+
+/* Централна част */
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.server-name {
+    font-size: 98px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 15px rgba(0,0,0,0.8);
+}
+.server-name span {
+    color: #4169e1; /* RP ще е синьо */
+}
+
+.main-btn {
+    padding: 20px 50px;
+    font-size: 22px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #4169e1, #6a5acd);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    transition: 0.3s;
+}
+.main-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Инфо кутии */
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+.rp-text {
+    margin-left: 30px; /* прави 20px празно място */
+    color: #6a5acd;
+}
+.box {
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 15px;
+    width: 40%;
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.box h2 {
+    color: #6a5acd;
+    margin-bottom: 10px;
+}
+
+/* Staff панел */
+.staff-panel {
+    position: fixed;
+    left: 0;
+    top: 80px;
+    width: 250px;
+    background: rgba(0,0,0,0.85);
+    padding: 20px;
+    color: white;
+    transition: transform 0.4s ease;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+}
+.staff-panel.collapsed {
+    transform: translateX(-220px);
+}
+.staff-panel h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #4169e1;
+}
+.staff-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+.staff-member img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.toggle-btn {
+    position: absolute;
+    right: -25px;
+    top: 20px;
+    background: #a5acd6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+}
+
+/* Футър */
+.footer {
+    background: black;
+    color: #a5acd6;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+/* Footer */
+
+.footer-inner{max-width:1200px;margin:0 auto;display:grid;gap:10px;justify-items:center;text-align:center}
+.footer .logo{font-weight:900}
+.footer .logo span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.footer .copy{opacity:.75;font-size:14px}

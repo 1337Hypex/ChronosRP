@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronos RolePlay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Видео фон -->
+    <div class="video-background video-container noselect">
+        <iframe width="150%" height="150%" src="https://www.youtube.com/embed/2GjCRNtJmn4?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1" frameborder="0"></iframe>
+        </div>
+
+    <!-- Навигация -->
+    <header>
+        
+        <nav>
+            <a href="https://discord.gg/r2FrDc65d3" target="_blank" class="discord-btn">Discord</a>
+        </nav>
+    </header>
+
+    <!-- Централна част -->
+    <main>
+        <div class="center-content">
+            <h2 class="server-name">Chronos <span>Rp</span></h2>
+            <a href="https://cfx.re/join/gylxm9" class="main-btn">Влез в сървъра</a>
+        </div>
+
+        <section class="info-boxes">
+            <div class="box">
+                <h2>Промени / Новини  <span class="rp-text">01.09.2025</span></h2>
+                
+                <p>С удоволствие съобщаваме, че <b>Chronos RolePlay</b> отваря врати за всички, готови да се потопят в истинска ролева игра...</p>
+            </div>
+
+            <div class="box">
+                <h2>Основна информация</h2>
+                <ul>
+                    <li>Реалистични системи, имоти, коли, персонализация.</li>
+                    <li>Сериозни ролеви игри и ясни правила.</li>
+                    <li>Активен екип за поддръжка <b>24/7</b> в Discord.</li>
+                    <li>Подходящ за нови и опитни играчи.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Staff панел -->
+    <aside id="staff-panel" class="staff-panel">
+        <div class="toggle-btn" onclick="toggleStaff()">&#9664;</div>
+        <h2>STAFF TEAM</h2>
+        <div class="staff-member">
+            <img src="https://i.imgur.com/j1fE4rR.png" alt="Hypеx">
+            <p><b>Hypеx</b><br><span>Собственик</span></p>
+        </div>
+        <div class="staff-member">
+            <img src="https://i.imgur.com/j1fE4rR.png" alt="Vxnko">
+            <p><b>Vxnko</b><br><span>Собственик</span></p>
+        </div>
+        <div class="staff-member">
+            <img src="https://i.imgur.com/j1fE4rR.png" alt="Dimitroww">
+            <p><b>Dimitroww</b><br><span>Разработчик</span></p>
+        </div>
+    </aside>
+
+    <!-- Футър -->
+         <footer class="footer">
+            <div class="footer-inner">
+             <div class="logo">CHRONOS <span>RP</span></div>
+             <div class="copy">© <span id="year"></span> Chronos Roleplay. All rights reserved.</div>
+            </div>
+              </footer>
+
+    <script>
+        function toggleStaff() {
+            document.getElementById("staff-panel").classList.toggle("collapsed");
+        }
+    </script>
+</body>
+</html>
